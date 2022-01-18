@@ -1,15 +1,8 @@
 package pro.sky.java.homeworks.course2.dz2;
 
-public class Car {
+public class Car extends MotorTransport{
 
-    public String modelName;
-    public int wheelsCount;
-
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
-    }
-
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
+    public Car(String modelName, int wheelsCount) {
+        super(modelName, wheelsCount);
     }
 }
